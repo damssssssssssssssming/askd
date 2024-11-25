@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   <audio class="song" controls loop>
+        <source src="hbd.mp3"></source>
+	   Your browser isn't supported for this Audio!!.
+    </audio>
+
+    <div class="container">
+        <div class="card">
+            <div class="outside">
+                <h1>Happy Birthday</h1>
+            </div>
+            <div class="inside">
+                <img src="cake.gif"/>
+                <h2>Happy Birthday</h2>
+                <h5>Ali!,On your special day, I wish you endless happiness, boundless opportunities, <br>
+                    and memories that fill your heart with joy. May this year be your best one yet, 
+                    <br> of laughter, love, and success in every step you take.</h5>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="frames frame1">
+                <img src="img1.png" alt="">
+                <p>Keep smiling,Keep shining</p>
+            </div>
+            <div class="frames frame2">
+                <img src="img2.png" alt="">
+                <p>Celebrate big because someone as amazing as you deserves all the best in life.
+                </p>
+            </div>
+            <div class="frames frame3">
+                <img src="img3.png" alt="">
+                <p> Cheers to you and all the incredible things coming your way! 🥳🎂🎉</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('birthdayAudio');
+        const button = document.getElementById('playAudio');
+
+        button.addEventListener('click', () => {
+            audio.play();
+            button.style.display = 'none'; // Hide the button after clicking
+        });
+    </script>
+</body>
+</html>
